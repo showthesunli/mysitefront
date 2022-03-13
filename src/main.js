@@ -8,3 +8,8 @@ const app = createApp(App)
 
 app.use(ElementPlus)
 app.mount('#app')
+
+
+import { DefaultService } from './client'
+
+DefaultService.getItemsItemsGet().then(res=>console.log(res))

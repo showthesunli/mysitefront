@@ -1,24 +1,16 @@
 <template>
-  <el-row>
+  <el-row >
     <el-col :span="18" :offset="3">
       <el-container>
         <el-header class="header">
-          <el-menu mode="horizontal" background-color="#545c64" text-color="#fff">
-            <el-menu-item index="1">Processing Center</el-menu-item>
-            <el-sub-menu index="2">
-              <template #title>Workspace</template>
-              <el-menu-item index="2-1">item one</el-menu-item>
-              <el-menu-item index="2-2">item two</el-menu-item>
-              <el-menu-item index="2-3">item three</el-menu-item>
-              <el-sub-menu index="2-4">
-                <template #title>item four</template>
-                <el-menu-item index="2-4-1">item one</el-menu-item>
-                <el-menu-item index="2-4-2">item two</el-menu-item>
-                <el-menu-item index="2-4-3">item three</el-menu-item>
-              </el-sub-menu>
-            </el-sub-menu>
-            <el-menu-item index="3" disabled>Info</el-menu-item>
-            <el-menu-item index="4">Orders</el-menu-item>
+          <el-menu mode="horizontal" background-color="#545c64" text-color="#fff" >
+            <el-menu-item index="1">首页</el-menu-item>
+            <el-menu-item index="2">健康</el-menu-item>
+            
+            <el-menu-item index="3" disabled>时尚</el-menu-item>
+            <el-menu-item index="4">游戏</el-menu-item>
+            <el-menu-item index="5">数码</el-menu-item>
+            <el-menu-item index="6">金融</el-menu-item>
           </el-menu>
         </el-header>
       </el-container>
@@ -52,10 +44,10 @@
             </el-col>
           </el-row>
         </el-main>
-        <el-aside>
+        <el-aside style="padding: 20px;">
           <el-affix position="top">
             <el-space direction="vertical" :size="60">
-              <el-card shadow="always" :key="n" v-for="n in 2" style="width: 250px; height:300px">
+              <el-card shadow="always" :key="n" v-for="n in 2" style="width: 260px; height: 300px">
                 <div v-for="o in 4" :key="o" class="text item">
                   {{ "List item " + o }}
                 </div>
