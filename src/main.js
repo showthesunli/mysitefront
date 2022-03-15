@@ -10,6 +10,6 @@ app.use(ElementPlus)
 app.mount('#app')
 
 
-import { DefaultService } from './client'
+// import { DefaultService } from './client'
 
-DefaultService.getItemsItemsGet().then(res=>console.log(res))
+// DefaultService.getItemsItemsGet().then(res=>console.log(res))
