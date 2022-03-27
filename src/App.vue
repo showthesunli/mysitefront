@@ -1,6 +1,7 @@
 <template>
   <hearder-component></hearder-component>
-  <index-content-component></index-content-component>
+  <!-- <index-content-component></index-content-component> -->
+  <router-view></router-view>
 </template>
 
 <style>

@@ -17,6 +17,7 @@
     "sass": "^1.49.9",
     "stylus": "^0.56.0",
     "vue": "^3.2.25",
+    "vue-router": "4",
     "webpack": "^4.46.0"
   },
   "devDependencies": {
@@ -25,5 +26,10 @@
     "unplugin-auto-import": "^0.6.4",
     "unplugin-vue-components": "^0.18.0",
     "vite": "^2.8.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "vite": "/home/liy/vite/packages/vite"
+    }
   }
 }

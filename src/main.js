@@ -1,15 +1,10 @@
+import { createApp } from "vue";
+import ElementPlus from "element-plus";
+import "element-plus/dist/index.css";
+import App from "./App.vue";
+import { router } from "./routes/route.js";
 
-import { createApp } from 'vue'
-import ElementPlus from 'element-plus'
-import 'element-plus/dist/index.css'
-import App from './App.vue'
-
-const app = createApp(App)
-
-app.use(ElementPlus)
-app.mount('#app')
-
-
-// import { DefaultService } from './client'
-
-// DefaultService.getItemsItemsGet().then(res=>console.log(res))
+const app = createApp(App);
+app.use(router);
+app.use(ElementPlus);
+app.mount("#app");
